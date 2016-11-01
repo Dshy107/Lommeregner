@@ -10,6 +10,10 @@ namespace Lommeregner
     {
         static void Main(string[] args)
         {
+            string input1 = Console.ReadLine();
+            int tal1 = Int32.Parse(input1);
+
+            Lommeregner lr = new Lommeregner();
         }
     }
 }
