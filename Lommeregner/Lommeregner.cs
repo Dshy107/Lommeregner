@@ -37,6 +37,16 @@ namespace Lommeregner
                 resultat = Minusmetode();
                 Console.WriteLine(resultat);
             }
+            else if (opr == "*")
+            {
+                resultat = Gangemetode();
+                Console.WriteLine(resultat);
+            }
+            else if (opr == "/")
+            {
+                resultat = Dividermetode();
+                Console.WriteLine(resultat);
+            }
             return resultat;
         }
         public int Plusmetode()
