@@ -11,9 +11,17 @@ namespace Lommeregner
         static void Main(string[] args)
         {
             string input1 = Console.ReadLine();
-            int tal1 = Int32.Parse(input1);
+            string input2 = Console.ReadLine();
+            string obr = Console.ReadLine();
+            //int tal1 = Int32.Parse(input1);
 
             Lommeregner lr = new Lommeregner();
+
+            lr.input1 = Int32.Parse(input1);
+            lr.input2 = 
+            lr.input2 = Int32.Parse(input2);
+
+
         }
     }
 }
