@@ -11,25 +11,52 @@ namespace Lommeregner
         public int input1 { get; set; }
         public string opr { get; set; }
         public int input2 { get; set; }
+        public int resultat { get; set; }
 
-        public int Plusmetode(string opr)
+        public void PrintResultat()
+        {
+
+            Console.WriteLine("Resultatet er:"+resultat);
+        }
+        public int BestemBeregning()
+        {
+            //int result = 0;
+
+            if (opr == "+")
+            {
+                resultat = Plusmetode();
+
+                Console.WriteLine(resultat);
+                //result = input1 + input2;
+                //return result;
+                
+            }
+            else if (opr == "-")
+            {
+
+                resultat = Minusmetode();
+                Console.WriteLine(resultat);
+            }
+            return resultat;
+        }
+        public int Plusmetode()
         {
 
             return (input1 + input2);
 
         }
-        public int Minusmetode(string opr)
+        public int Minusmetode()
         {
             return (input1 - input2);
         }
-        public int Gangemetode(string opr)
+        public int Gangemetode()
         {
             return (input1 * input2);
         }
-        public int Dividermetode(string opr)
+        public int Dividermetode()
         {
             return (input1 / input2);
         }
-        
+
     }
 }
